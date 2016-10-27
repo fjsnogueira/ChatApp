@@ -18,6 +18,7 @@ namespace TeamOfOne
                 ConnectedUsers = new List<string>();
 
             ConnectedUsers.Add(newUser);
+            
             Clients.Caller.getConnectedUsers(ConnectedUsers);
             Clients.Others.newUserAdded(newUser);
         }

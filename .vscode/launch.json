@@ -6,7 +6,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceRoot}\\bin\\Debug\\netcoreapp1.0\\ffwap.dll",
+            "program": "${workspaceRoot}/bin/Debug/netcoreapp1.1/osx.10.11-x64/ChatApp.dll",
             "args": [],
             "cwd": "${workspaceRoot}",
             "stopAtEntry": false,

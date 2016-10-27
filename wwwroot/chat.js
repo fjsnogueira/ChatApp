@@ -1,5 +1,8 @@
 var userName = prompt("Enter your name: ");
+
 var chat = $.connection.chatHub;
+var messenger = $.connection.messengerHub;
+
 chat.client.messageReceived = function (originatorUser, message) {
     $("#messages").append('<li><strong>' + originatorUser + '</strong>: ' + message);
 };
