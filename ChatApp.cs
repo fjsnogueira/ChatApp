@@ -11,6 +11,7 @@ namespace TeamOfOne
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseStartup<Startup>()
+                .UseWebRoot("www")
                 .Build();
 
             host.Run();
