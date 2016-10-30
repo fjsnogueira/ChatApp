@@ -1,18 +1,18 @@
 (function () {
     'use strict';
 
-    angular.module('app')
+    angular.module('ChatApp')
         .config(defineRoutes);
 
     defineRoutes.$inject = ["$stateProvider", "$urlRouterProvider"];
 
     function defineRoutes ($stateProvider, $urlRouterProvider) {
         $stateProvider
-            .state('app', {
-                url: '/app',
+            .state('chat', {
+                url: '/chat',
                 abstract: false,
                 templateUrl: 'chat/chat.layout.html',
-                controller: 'AppCtrl'
+                controller: 'ChatCtrl'
             })
             
             // .state('app.menu', {
@@ -27,6 +27,6 @@
             
             ;
         // if none of the above states are matched, use this as the fallback
-        $urlRouterProvider.otherwise('/app');
+        $urlRouterProvider.otherwise('/chat');
     }
 })();

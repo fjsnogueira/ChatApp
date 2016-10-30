@@ -1,34 +1,76 @@
 <div id="firstColumn">
-    <div id="fcHeader">  
-        <ng-md-icon icon="radio_button_checked" size="48"></ng-md-icon>
+    <div id="fcHeader" style="display: flex; flex-direction: row; justify-content: space-between;">  
+        <!--<div class="bar bar-header">-->
+            <button class="button button-icon icon ion-gear-a"></button>
+            <h4 class="title">ChatApp</h4>
+            <a class="button button-icon icon ion-compose"></a>
+        <!--</div>-->
     </div>
     <div id="fcBody">
         <div class="userListDiv">
-            userlist
+
+                <div class="barREMOVED bar-headerREMOVED item-input-inset">
+                    <label class="item-input-wrapper">
+                        <i class="icon ion-ios-search placeholder-icon"></i>
+                        <input type="search" placeholder="Search">
+                    </label>
+                    <button class="button button-clear" style="color: black;">
+                        Cancel
+                    </button>
+                </div>
+
+                <div class="list">
+                    <a class="item item-avatar" href="#">
+                        <img src="../img/venkman.jpg">
+                        <h2>Venkman</h2>
+                        <p>Back off, man. I'm a scientist.</p>
+                    </a>
+
+                    <a class="item item-avatar" href="#">
+                        <img src="/img/venkman.jpg">
+                        <h2>Venkman</h2>
+                        <p>Back off, man. I'm a scientist.</p>
+                    </a>
+
+                    <a class="item item-avatar" href="#">
+                        <img src="/img/venkman.jpg">
+                        <h2>Venkman</h2>
+                        <p>Back off, man. I'm a scientist.</p>
+                    </a>
+
+                    <a class="item item-avatar" href="#">
+                        <img src="/img/venkman.jpg">
+                        <h2>Venkman</h2>
+                        <p>Back off, man. I'm a scientist.</p>
+                    </a>
+                </div>
+
             <ul id="userList"> </ul>
         </div>        
     </div>
 </div>
 
 <div id="secondColumn">
-    <div id="header">
-        header
+    <div id="header" style="display: flex; flex-direction: row; justify-content: flex-end; padding-right: 16px;">
+        <h4>header</h4>
     </div>
     <div id="body">
         <div id="thread">
             <div id="threadBody">
                 
                 <ul id="messages"></ul>
-                
-                thread body
 
             </div>
             <div id="threadFooter">
                 <div class="divider"></div>
 
-                <div id="input">
-                    <input type="text" id="messageBox" />
-                    <input type="button" id="sendMessage" value="Send Message!" />
+                <div id="input" style="display: flex; justify-content: space-between;">
+                    <a class="button button-icon icon ion-android-attach"></a>
+
+                    <input type="text" style="display: flex; width: 100%; padding: 8px;" id="messageBox" placeholder="write a message" />
+                    <!--<input type="button" id="sendMessage" value="Send Message!" />-->
+
+                    <a class="button button-icon icon ion-paper-airplane"></a>
                 </div>
             </div>
         </div>

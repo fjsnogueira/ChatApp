@@ -4,7 +4,7 @@
 // 'app' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'app.controllers' is found in controllers.js
-angular.module('app', ['ionic', 'app.controllers'])
+angular.module('ChatApp', ['ionic', 'Chat.controllers'])
     .constant('_', window._)
     //use in views, ng-repeat="x in _.range(3)"
     .run(function ($ionicPlatform, $rootScope) {

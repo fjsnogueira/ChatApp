@@ -4,25 +4,28 @@
         <title>Awesome Chat Application</title>
         <meta charset="utf-8" />
 
-        <link href="/lib/ionic/release/css/ionic.css" rel="stylesheet">
+        <link href="/lib/ionic/release/css/ionic.min.css" rel="stylesheet">
         <link href="chat/chat.css" rel="stylesheet">
 
         <!-- ionic/angularjs js -->
-        <script src="/lib/ionic/release/js/ionic.bundle.js"></script>
+        <script src="/lib/ionic/release/js/ionic.bundle.min.js"></script>
 
         <!-- cordova script (this will be a 404 during development) -->
         <!--<script src="cordova.js"></script>-->
 
+        <script src="/lib/lodash/dist/lodash.min.js"></script>
+
+        
+        <script src="chat/chat.controller.js"></script>
         <script src="app.module.js"></script>
         <script src="app.routes.js"></script>
-        <script src="app.controller.js"></script>
         
         <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.0.min.js"></script>
         <script src="http://ajax.aspnetcdn.com/ajax/signalr/jquery.signalr-2.2.1.min.js"></script>
         <script src="../../signalr/hubs"></script>
 
     </head>
-    <body ng-app="app">
+    <body ng-app="ChatApp">
 
         <style>
             body > ion-nav-view .pane {

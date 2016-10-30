@@ -1,5 +1,5 @@
-angular.module('app.controllers', [])
-    .controller('AppCtrl', function ($scope, $ionicModal, $timeout, _) {
+angular.module('Chat.controllers', [])
+    .controller('ChatCtrl', function ($scope, $ionicModal, $timeout, _) {
 
     // With the new view caching in Ionic, Controllers are only called
     // when they are recreated or on app start, instead of every page change.
