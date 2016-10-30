@@ -12,7 +12,8 @@
                 url: '/chat',
                 abstract: false,
                 templateUrl: 'chat/chat.layout.html',
-                controller: 'ChatCtrl'
+                controller: 'ChatCtrl',
+                controllerAs: 'ChatCtrl'
             })
             
             // .state('app.menu', {

@@ -51,13 +51,17 @@
 </div>
 
 <div id="secondColumn">
-    <div id="header" style="display: flex; flex-direction: row; justify-content: flex-end; padding-right: 16px;">
-        <h4>header</h4>
+    <div id="header" style="display: flex; flex-direction: row; justify-content: space-between;">
+        <div style="display: flex; justify-content: center; width: 100%;">
+            <h4>header</h4>
+        </div>
+        <div  style="display: flex; flex-direction: row; justify-content: flex-end; padding-right: 16px;">
+            <a ng-click="ChatCtrl.toggleDetails()" class="button button-icon icon ion-information-circled"></a>
+        </div>
     </div>
     <div id="body">
         <div id="thread">
             <div id="threadBody">
-                
                 <ul id="messages"></ul>
 
             </div>
@@ -65,12 +69,18 @@
                 <div class="divider"></div>
 
                 <div id="input" style="display: flex; justify-content: space-between;">
-                    <a class="button button-icon icon ion-android-attach"></a>
+                    <a class="button button-icon icon ion-navicon-round"></a>
 
-                    <input type="text" style="display: flex; width: 100%; padding: 8px;" id="messageBox" placeholder="write a message" />
+
+                    <input type="text" style="display: flex; width: 100%; padding: 8px; margin-top: 8px;" id="messageBox" placeholder="write a message" />
                     <!--<input type="button" id="sendMessage" value="Send Message!" />-->
 
-                    <a class="button button-icon icon ion-paper-airplane"></a>
+                    <!--<a class="button button-icon icon ion-android-attach"></a>-->
+                    <a class="button button-icon icon ion-camera"></a>
+                    <a class="button button-icon icon ion-images"></a>
+                    <a class="button button-icon icon ion-mic-a"></a>
+                    <a class="button button-icon icon ion-thumbsup"></a> <!--<a class="button button-icon icon ion-planet"></a>-->
+                    <!--<a class="button button-icon icon ion-paper-airplane"></a>-->
                 </div>
             </div>
         </div>

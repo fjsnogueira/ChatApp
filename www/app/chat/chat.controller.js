@@ -8,4 +8,22 @@ angular.module('Chat.controllers', [])
     //$scope.$on('$ionicView.enter', function(e) {
     //});
 
+    var vm = this;
+
+    vm.showDetails = false;
+    vm.toggleDetails = toggleDetails;
+
+    function toggleDetails() {
+        vm.showDetails = !vm.showDetails;
+
+        var ammount = "0px";
+        
+        if(vm.showDetails) {
+            ammount = "300px";   
+        }
+
+        document.documentElement.style.setProperty('--right-column-width', ammount);
+
+        console.log(ammount);
+    }
 });
